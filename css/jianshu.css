@@ -13,51 +13,59 @@ body{
 	box-sizing: border-box;
 }
 
-.navbar{
+.header-section{
 	text-align: center;
 	height: 56px;
 	border-bottom:1px #f0f0f0 solid ;
 }
-.navbar img{
+.header-section img{
 	display: inline-block;
 	width: 100px;
 	height: 56px;
 	float: left;
 
 }
-.nav-hd{
+.header-nav{
 	display: inline-block;
-	width: 900px;
+	max-width: 1400px;
+	min-width: 960px;
 	height: 56px;
 	margin-right: 10px;
 	vertical-align: top;
 	text-align: left;
 }
-.nav-hd .home-page{
+.header-nav .nav-left{
 	display: inline-block;
+	height: 56px;
+	vertical-align: top;
+	margin-right: 350px;
+}
+.header-nav .nav-home{
+	font-size: 17px;
 	width: 64px;
 	text-align: center;
 	color: #ea6f5a;
 	line-height: 56px; 
-	margin-left: 0px;
+	margin-right: 20px;
 }
-.nav-hd .nav-download-app{
+.header-nav .nav-download-app{
 	display: inline-block;
 	width: 93px;
 	height: 56px;
+	font-size: 17px;
 	text-align: center;
 	color: #333;
 	line-height: 56px;
-
+	margin-right: 20px;
 }
-.nav-hd .nav-download-app:hover{
+.header-nav .nav-download-app:hover{
 	background-color: #e0e0e0;
 }
-.nav-hd .search{
+.header-nav .search{
 	display: inline-block;
 	position: relative;
 }
-.nav-hd .search .input{
+.header-nav .search .input{
 	width: 160px;
 	height: 38px;
 	border-radius: 20px;
@@ -68,35 +76,36 @@ body{
 	font-size: 14px;
 	color: #b0b0b0;
 }
-.nav-hd .search i{
+.header-nav .search i{
 	color: #b0b0b0;
 	font-size: 16px;
 	position: absolute;
 	top: 12px;
 	right: 10px;
 }
-.nav-hd .stely-mode-bth{
-	float: right;
-    line-height: 20px;
+
+
+.header-nav .stely-mode-bth{
+    line-height: 56px;
     padding: 17px 10px 17px 15px;
-    font-size: 24px;
+    font-size: 18px;
     color: #969696;
-	/*float: right;
-	color: #969696;
-	font-size: 24px;
-	line-height: 56px;*/
+    margin-right: 12px;
 }
-.nav-hd .nav-register{
+
+.nav-middle{
+	display: inline-block;
+	
+}
+.header-nav .nav-register{
 	float: right;
     margin: 17px 20px 0 10px;
     font-size: 15px;
     color: #969696;
-	/*float: right;
-	margin-right: 0px;
-	color: #969696;
-	line-height: 56px;
-	
-  font-size: 15px;*/
+}
+
+.nav-right{
+	float: right;
 }
 .sing-up{
 	display: inline-block;
@@ -124,7 +133,7 @@ body{
 .write-up:hover{
 	background-color: #ec6149;
 }
-
+/*11111111111111111111111111111111111111111111111111111111111111111111111*/
 .page-contion{
 	width: 960px;
 }
@@ -138,14 +147,13 @@ body{
 }
 .page-col-left .banner{
 	display: inline-block;
-	width: 485px;
-	height: 210px;
+	
 	margin-left: 15px;
 	position: relative;
 }
 .page-col-left .banner img{
-	width: 485px;
-	height: 210px;
+	width: 650px;
+	height: 270px;
 	border-radius: 20px;
 }
 .page-col-left .banner:hover .previous{
@@ -160,7 +168,7 @@ body{
 	height: 50px;
 	background-color:rgba(0,0,0,0.3);
 	position: absolute;
-	top: 80px;
+	top: 110px;
 	left: 0px;
 	border-radius:0 5px 5px 0;
 }
@@ -181,7 +189,7 @@ body{
 	height: 50px;
 	background-color:rgba(0,0,0,0.3);
 	position: absolute;
-	top: 80px;
+	top: 110px;
 	right: 0px;
 	border-radius: 5px 0 0 5px;
 }
@@ -199,14 +207,13 @@ body{
 
 
 .recommend-collection{
-	width: 485px;
-	height: 132px;
+	
 	margin-top: 33px;
 	margin-left: 15px;
 	border-bottom: 1px #f0f0f0;
 }
 .recommend-collection .collection{
-	display: inline-block;
+	float: left;
     margin: 0 18px 18px 0;
     min-height: 32px;
     background-color: #f7f7f7;
@@ -252,8 +259,7 @@ body{
 	margin-top: 23px;
 }
 .note-item{
-	width: 485px;
-	height: 187px;
+	
 	border-bottom: 1px #f0f0f0 solid;
 }
 .list-container .note-list .note-item .wrap-img{
@@ -333,7 +339,7 @@ body{
 			float: right;
 			width: 219px;
 			height: 700px;
-			margin-right: 198px;
+			
 			background-color: #fff;
 		}
 		.board{
@@ -343,8 +349,8 @@ body{
 			height: 230px;
 		}
 		.board img{
-			width: 219px;
-			height: 39px;
+			width: 280px;
+			height: 50px;
 			margin-bottom: 8px;
 			display: inline-block;
 		}
@@ -461,7 +467,7 @@ body{
 
 .footer-section{
 	float: left;
-	width: 750px;
+	
 	background-color: #fff;
 } 
 .footer-section .row{
@@ -483,6 +489,7 @@ body{
 	font-size: 12px;
 	color: #c8c8c8;
 	margin-top: 10px;
+
 }
 
 .footer-section .icp a:hover{
@@ -491,6 +498,7 @@ body{
 .footer-section .icp a:nth-child(5) img{
 	width: 25.5px;
 	height: 30px;
+	vertical-align:top;
 }
 .footer-section .icp a{
 	color: #c8c8c8;
